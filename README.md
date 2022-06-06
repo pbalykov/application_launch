@@ -2,8 +2,8 @@
 
 ### About the code
 
-The code was written in C++ using the qt framework.
-The UNIX library **#include <unistd.h>**
+The code was written in C++ using the qt framework and
+the UNIX library **#include <unistd.h>**
 for the ***execvp*** function that launches applications,
 the program also supports two languages Russian and English.
 
@@ -17,6 +17,7 @@ then configure the compiler for yourself if the terminal is used, then ..
    make
    ./execKod
 ```
+Withoturn the library, **qt** will not be able to!!!
 
 ### Why do I need this program?
 
