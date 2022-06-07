@@ -29,7 +29,6 @@ void MainWindow::on_runProg_clicked() {
         data[i] = new char[list[i].size() + 1];
         std::strcpy(data[i], list[i].toLocal8Bit().constData());
     }
-
     data[list.size()] = NULL;
     execvp(data[0], data);
     freeArr(data, list.size());
@@ -40,5 +39,11 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
     if ( key == Qt::Key_Return) {
         this->on_runProg_clicked();
     }
+}
+
+
+void MainWindow::on_exit_clicked()
+{
+    this->close();
 }
 

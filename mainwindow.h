@@ -18,6 +18,8 @@ public:
 private slots:
     void on_runProg_clicked();
 
+    void on_exit_clicked();
+
 private:
     Ui::MainWindow *ui;
     void keyPressEvent(QKeyEvent *event);
