@@ -32,18 +32,26 @@ void MainWindow::on_runProg_clicked() {
     data[list.size()] = NULL;
     execvp(data[0], data);
     freeArr(data, list.size());
+    return ;
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event) {
     int key=event->key();
-    if ( key == Qt::Key_Return) {
-        this->on_runProg_clicked();
+    switch (key) {
+        case Qt::Key_Return :
+            this->on_runProg_clicked();
+            break;
+        case Qt::Key_Escape :
+            this->on_exit_clicked();
+            break;
+        default:
+            break;
     }
+    return ;
 }
 
 
-void MainWindow::on_exit_clicked()
-{
+void MainWindow::on_exit_clicked() {
     this->close();
 }
 
