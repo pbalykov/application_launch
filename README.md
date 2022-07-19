@@ -22,4 +22,4 @@ Withoturn the library, **qt** will not be able to!!!
 ### Why do I need this program?
 
 This program was written as an application launcher for window readers (but it will not work for them) and
- the tax can be called as **xfce4-appfinder** current without auto prompts (why they are needed **=)**)
+ the tax can be called as **xfce4-appfinder** current without auto prompts (why they are needed ***=)***)
