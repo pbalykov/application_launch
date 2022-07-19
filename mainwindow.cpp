@@ -22,7 +22,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::on_runProg_clicked() {
-    QString text = this->ui->input->text();//.toStdString()
+    QString text = this->ui->input->text();
     QStringList list = text.split( QRegExp("(\\ |\\t|\\n)") );
     char** data = new char*[list.size() + 1];
     for (auto i = 0; i < list.size(); i++) {
