@@ -1,4 +1,4 @@
-# Launching an application for unix systems
+# Launching an application for UNIX systems
 
 ### About the code
 
