@@ -52,6 +52,6 @@ void MainWindow::keyPressEvent(QKeyEvent *event) {
 
 
 void MainWindow::on_exit_clicked() {
-    this->close();
+	this->close();
 }
 
